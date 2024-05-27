@@ -1,0 +1,25 @@
+{
+  "name": "node-http-server",
+  "version": "0.0.1",
+  "description": "a zero-configuration static file server support download, upload, rename and delete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lungern-tech/node-http-server.git"
+  },
+  "keywords": [
+    "command-line",
+    "static-server",
+    "file-upload-server",
+    "file-sharing"
+  ],
+  "author": "lungern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lungern-tech/node-http-server/issues"
+  },
+  "homepage": "https://github.com/lungern-tech/node-http-server#readme"
+}

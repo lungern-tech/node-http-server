@@ -1,5 +1,5 @@
 {
-  "name": "node-http-server",
+  "name": "lungern__node-http-server",
   "version": "0.0.1-alpha",
   "description": "a zero-configuration static file server support download, upload, rename and delete",
   "main": "index.js",

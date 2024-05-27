@@ -4,7 +4,12 @@
   "description": "a zero-configuration static file server support download, upload, rename and delete",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "bin": {
+    "node-http-server": "./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/lungern-tech/node-http-server/issues"
   },
-  "homepage": "https://github.com/lungern-tech/node-http-server#readme"
+  "homepage": "https://github.com/lungern-tech/node-http-server#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/hbs": "^4.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <style>
+    html {
+      font-size: 18px;
+    }
+    .nav {
+      margin: 20px 100px 0;
+    }
+    table {
+      width: 100%;
+      padding: 40px 100px;
+      text-align: left;
+      td {
+        padding: 3px 0px;
+      }
+      th:first-child {
+        white-space: nowrap;
+        width: 40vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      th:nth-child(3), td:nth-child(3) {
+        text-align: right;
+        padding: 0 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="nav">
+      <a title="home" href="/">🏠️</a>
+    </div>
+    <table>
+      <thead>
+        <th>Names</th>
+        <th>Last Modified</th>
+        <th>Size</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < list.length; i++) { %>
+          <tr>
+            <td title="<%= list[i].name %>">
+              <% if (list[i].isDirectory) { %>
+                <a href="<%= list[i].name %>">
+              <% } %>
+              <%= list[i].name %>
+              <% if (list[i].isDirectory) { %>
+                </a>
+              <% } %>
+            </td>
+            <td><%= list[i].modifiedTime.toISOString().replace('T', " ").replace('Z', "") %></td>
+            <td><%= Math.ceil(list[i].size / 1024) %>KB</td>
+            <td>
+              <span >
+                <% if(!list[i].isDirectory) { %>
+                  <a title="download" href="<%= list[i].name %>" >⤵️</a>
+                <% } %>
+                </span>
+            </td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

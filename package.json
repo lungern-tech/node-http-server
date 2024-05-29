@@ -29,12 +29,10 @@
   "homepage": "https://github.com/lungern-tech/node-http-server#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "hbs": "^4.2.0"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@types/hbs": "^4.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }

@@ -1,5 +1,5 @@
 {
-  "name": "@lungern-seeker/node-static-web-server",
+  "name": "@lungern-seeker/node-static-http-server",
   "version": "0.0.1",
   "description": "a zero-configuration static file server support download, upload, rename and delete",
   "main": "index.js",

@@ -1,4 +1,4 @@
-# Node-static-web-server
+# Node-http-server
 ---
 inspired by [Dufs](https://github.com/sigoden/dufs). Provide a zero configuration static server for serving, uploading, searching and access control
 

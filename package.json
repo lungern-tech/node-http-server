@@ -1,6 +1,6 @@
 {
   "name": "@lungern-seeker/node-http-server",
-  "version": "0.0.3",
+  "version": "0.0.4-alpha.0",
   "description": "a zero-configuration static file server support download, upload, rename and delete",
   "exports": "./index.js",
   "type": "module",

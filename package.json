@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node --esm src/index.ts",
     "build": "tsc",
-    "terminal": "ts-node --esm src/utils/getConfig.ts"
+    "terminal": "ts-node --esm src/utils/getConfig.ts",
+    "alpha": "npm version prerelease --preid=alpha",
+    "patch": "npm version patch"
   },
   "bin": {
     "node-http-server": "./src/index.js"

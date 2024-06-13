@@ -6,8 +6,7 @@ import fs from "node:fs"
 import { fileURLToPath } from 'node:url';
 import { publicIpv4 } from "public-ip";
 import GetHostIP from "./utils/getIP.js";
-
-
+import getConfig from "./utils/getConfig.js";
 const app = express()
 app.set('view engine', 'ejs')
 
@@ -61,7 +60,10 @@ app.get('*', (req, res, next) => {
 })
 
 
-const port = 8080
+const config = getConfig()
+
+const { port } = config
+
 app.listen(port, async () => {
   const internalIP = GetHostIP()
   const ip = await publicIpv4()
